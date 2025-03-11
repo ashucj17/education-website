@@ -20,12 +20,12 @@
     --color-black: #000;
     --color-bg: #1f2641;
     --color-bg1: #2e3267;
-    -color-bg2: #424898;
+    --color-bg2: #424898;
 
 
     --container-width-lg: 80%;--container-width-md: 90%;--container-width-sm: 94%;
 
-    --transition: all 400s ease;
+    --transition: all 400ms ease;;
 }
 
 body{
@@ -62,11 +62,14 @@ h2{
 }
 
 h3{
-    font-style: 1.6rem;
+    font-size: 1.6rem;
 }
 
 h4{
     font-size: 1.3rem;
+}
+a{
+    color: var(--color-white);
 }
 
 .btn{
@@ -74,7 +77,7 @@ h4{
     background: var(--color-white);
     color: var(--color-black);
     padding: 1rem 2rem;
-    border: 1ps solid transparent;
+    border: 1px solid transparent;
     font-weight: 500;
     transition: var(--transition);
 }
@@ -94,4 +97,48 @@ img{
     width: 100%;
     display: block;
     object-fit: cover;
+}
+
+/* ===========================NAVBAR======================= */
+
+nav{
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+.nav__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__container img{
+    width: 120px;
+    height: auto;
+}
+
+nav button{
+    display: none;
+}
+
+
+.nav__menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__menu a{
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.nav__menu a:hover {
+    color: var(--color-bg2);
+    cursor: pointer;
 }
