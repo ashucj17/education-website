@@ -16,6 +16,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+
+<!-- Swiper JS  -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
     <title>Education Website</title>
 </head>
 <body>
@@ -229,6 +236,99 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
  </section>
 
 
- <script src="app.js"></script>
+  <!---------------- Testimonial --------------->
+
+
+
+  <section class="container testimonial__container mySwiper">
+    <h2>Testimonial</h2>
+    <div class="swiper-wrapper">
+    <artical class="testimonial swiper-slide">
+    <div class="avatar">
+        <img src="./images/avatar1.jpg" alt="avatar">
+    </div>
+    <div class="testimonial__info">
+        <h5>Rani Gautam</h5>
+        <small>Student</small>
+    </div>
+    <div class="testimonial__body">
+        <p>Finally, all my coding concepts that once seemed too complex are now crystal clear.</p>
+    </div>
+</artical>
+<artical class="testimonial swiper-slide">
+    <div class="avatar">
+        <img src="./images/avatar2.jpg" alt="avatar">
+    </div>
+    <div class="testimonial__info">
+        <h5>Vikas Mahera</h5>
+        <small>Student</small>
+    </div>
+    <div class="testimonial__body">
+        <p>This course has completely transformed my understanding of programming. </p>
+    </div>
+</artical>
+<artical class="testimonial swiper-slide">
+    <div class="avatar">
+        <img src="./images/avatar3.jpg" alt="avatar">
+    </div>
+    <div class="testimonial__info">
+        <h5>Sameer Gulati</h5>
+        <small>Student</small>
+    </div>
+    <div class="testimonial__body">
+        <p>I struggled with DevOps before, but this course made Docker & Kubernetes easy to grasp with practical examples.</p>
+    </div>
+</artical>
+<artical class="testimonial swiper-slide">
+    <div class="avatar">
+        <img src="./images/avatar4.jpg" alt="avatar">
+    </div>
+    <div class="testimonial__info">
+        <h5>Usma Malik</h5>
+        <small>Student</small>
+    </div>
+    <div class="testimonial__body">
+        <p>I had zero coding experience before, but now I feel confident building my own projects from scratch.</p>
+    </div>
+</artical>
+<artical class="testimonial swiper-slide">
+    <div class="avatar">
+        <img src="./images/avatar5.jpg" alt="avatar">
+    </div>
+    <div class="testimonial__info">
+        <h5>Abhay Rathod</h5>
+        <small>Student</small>
+    </div>
+    <div class="testimonial__body">
+        <p>The step-by-step guidance made learning to code a breeze. I especially loved the community support and mentorship.</p>
+    </div>
+</artical>
+</div>
+<div class="swiper-pagination"></div>
+</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    //   when iwdth is >=600px
+    breakpoints:{
+        600: {
+        slidesPerView: 2
+    }
+    }
+    });
+  </script>
 </body>
 </html>
