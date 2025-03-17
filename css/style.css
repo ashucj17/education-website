@@ -501,11 +501,60 @@ footer ul li a:hover{
         width: 100%;
         height: 100%;
         display: grid;
-        place-items: center;
+        place-items: center;==
     }
 
     .nav__menu li a:hover{
         background: var(--color-bg2);
         color: var(--color-white);
     }
+
+    /* ================ Header ============ */
+
+.hero{
+    height: 52vh;
+    margin-bottom: 4rem;
+}
+
+.hero__container{
+    gap: 0;
+    padding-bottom: 3rem;
+}
+
+/* ================ Categories ============ */
+
+.categories{
+    height:auto;
+}
+
+.categories__container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+.categories__left{
+    margin-right: 0;
+}
+/* ================ Categories ============ */
+
+.courses{
+    margin-top: 0;
+}
+.courses__container{
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ================ Categories ============ */
+
+.faqs__container{
+    grid-template-columns: 1fr;
+}
+.faq{
+    padding: 1.5rem;
+}
+
+/* ================ footer ============ */
+
+.footer__contianer{
+    grid-template-columns: 1fr 1fr;
+}
 }
