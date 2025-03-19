@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- Google font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Education Website</title>
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <img src="./images/Education.png" alt="site-logo">
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cources.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+<!---------------- Contact --------------->
+
+
+<section class="contact">
+    <div class="container contact__contianer">
+        <aside class="contact__aside">
+            <div class="aside__image">
+                <img src="./images/contact.svg" alt="Contact">
+            </div>
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us via phone, email, or the form below—we're happy to help!</p>
+            <ul class="contact__details">
+                <li><i class="fa-solid fa-phone"></i>
+                <a href="tel:+918182831232">818-283-1232</a></li>
+                <li><i class="fa-solid fa-envelope"></i>
+                <a href="mailto:alpha@gmail.com">alpha@gmail.com</a></li>
+                <li></li>
+                <li><i class="fa-solid fa-location-dot"></i>
+                <a href="https://google.com/maps">Krishna Street</a></li>
+                </ul>
+                <ul class="contact__socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+        </aside>
+
+
+<!---------------- Contact Form --------------->
+
+<form class="contact__form" action="https://formspree.io/f/xrbpeejr"  method="POST">
+    <div class="form__name">
+        <input type="text" name="First Name" placeholder="First Name" required>
+        <input type="text" name="Last Name" placeholder="Last Name" required>
+    </div>
+    <input type="email" name="Email Address" placeholder="Your Email Address">
+    <textarea name="message" rows="7" placeholder="Message" required></textarea>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
+</div>
+</section>
+
+
+<!---------------- Footer --------------->
+
+
+<footer>
+    <div class="container footer__contianer">
+        <div class="footer__1">
+            <img src="./images/Education.png" alt="logo">
+            <p>Our goal is to make top-notch education accessible to everyone, everywhere.</p>
+        </div>
+         <div class="footer__2">
+            <h4>Pramalinks</h4>
+            <ul class="parmalinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html"></a>Courses</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </div>
+
+         <div class="footer__3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and condition</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+         </div>
+
+         <div class="footer__4">
+            <h4>Contact Us</h4>
+            <div>
+            <p><a href="tel:+918556447254">+91 855-644-7254</a></p>
+            <p><a href="mailto:alpha@gmail.com">alpha@gmail.com</a></p>
+            </div>
+
+            <ul class="footer__social">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"></a><i class="fa-brands fa-x-twitter"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-linkedin-in"></i></li>
+            </ul>
+         </div>
+
+         
+
+    </div>
+    <div class="footer__copyright">
+        <small>Copyright &copy; EDUCATION</small>
+     </div>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
