@@ -304,7 +304,7 @@ padding: 2rem;
 }
 
 .faq h4{
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 2.2rem;
 }
 
@@ -346,6 +346,7 @@ padding: 2rem;
 .testimonial__info {
     text-align: center;
 }
+
 
 .testimonial__body{
     background: var(--color-primary);
